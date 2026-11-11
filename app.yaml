@@ -1,0 +1,14 @@
+
+runtime: php83
+
+entrypoint: serve index.html
+
+handlers:
+  - url: /
+    script: index.html
+
+  - url: /index.html
+    script: index.html
+
+  - url: /factorial.php
+    script: factorial.php
